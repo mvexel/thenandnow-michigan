@@ -1,6 +1,6 @@
 # OSM Then And Now
 
-View OpenStreetMap as it was in June 2007, and compare it to what it looks now.
+View OpenStreetMap Michigan as it was in January 2016, and compare it to what it looks now.
 
 THIS WILL BLOW YOUR MIND.
 

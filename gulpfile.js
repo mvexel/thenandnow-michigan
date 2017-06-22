@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 var open = require('open');
 var wiredep = require('wiredep').stream;
-var deploy = require("gulp-gh-pages");
+var ghPages = require('gulp-gh-pages');
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -130,7 +130,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
 });
 
 // deploy on gh-pages
-gulp.task('deploy', function () {
-    gulp.src("./dist/**/*")
-        .pipe(deploy());
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
